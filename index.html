@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rock paperscince</title>
+ <link rel="stylesheet" href="rock-pap-sci.css">
+</head>
+
+<body>
+ <div class="container">
+  <div class="main">
+   <P>
+    Rock Paper Scissors
+   </P>
+   <p>
+    choose one
+   </p>
+   <div class="scores" id="scores">
+    <div class="your-score" id="your-score">
+     <p>
+     <h3>Your score</h3>
+     <hr>
+     <div class=""></div>
+     <label for="">SCORE: </label>
+     <div id="your-actual-score"></div>
+     </p>
+     <div class="winrate">
+      <div class="win-rate-text">Win rate: </div>
+      <div id="percentage1">50</div>
+      <div class="">%</div>
+     </div>
+    </div>
+    <div class="comp-score" id="comp-score">
+     <p>
+     <h3>Comp score</h3>
+     <hr>
+     <div>
+      <div><label for="">SCORE: </label></div>
+      <div id="actual-comp-score"></div>
+     </div>
+     </p>
+     <div class="winrate">
+      <div class="win-rate-text">Win rate: </div>
+      <div id="percentage2">50</div>
+      <div class="">%</div>
+     </div>
+    </div>
+   </div>
+
+   <div class="buttons">
+    <button onclick="rock()" class="rock">Rock</button>
+    <button onclick="paper()" class="paper">Paper</button>
+    <button onclick="scissors()" class="">Scissors</button>
+   </div>
+   <hr>
+   <br>
+   <div class="results" id="results"></div>
+
+  </div>
+ </div>
+
+
+ <script src="rock-pap-sci.js">
+
+ </script>
+</body>
+
+</html>
