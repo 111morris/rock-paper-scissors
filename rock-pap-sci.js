@@ -19,7 +19,7 @@ function rock() {
  } else {
   computerMove = 'SCISSORS';
  }
- console.log(computerMove);
+ // console.log(computerMove);
 
  let result = '';
  if (computerMove === 'ROCK') {
@@ -36,8 +36,10 @@ function rock() {
  document.getElementById("your-actual-score").textContent = yourNumber;
  document.getElementById("actual-comp-score").textContent = compNumber;
  let total = yourNumber + compNumber;
- percentage2 = Math.round((compNumber / total) * 100);
- percentage1 = Math.round((yourNumber / total) * 100);
+ isNaN(percentage1) ? 50 : percentage1 = Math.round((yourNumber / total) * 100);
+ isNaN(percentage2) ? 50 : percentage2 = Math.round((compNumber / total) * 100);
+ isNaN(percentage1) ? percentage1 = Math.round((yourNumber / total) * 100) : 50;
+ isNaN(percentage2) ? percentage2 = Math.round((compNumberNumber / total) * 100) : 50;
  document.getElementById("percentage1").textContent = percentage1;
  document.getElementById("percentage2").textContent = percentage2;
 
@@ -53,7 +55,7 @@ function paper() {
  } else {
   computerMove = 'SCISSORS';
  }
- console.log(computerMove);
+ // console.log(computerMove);
 
  let result = '';
  if (computerMove === 'ROCK') {
@@ -70,8 +72,10 @@ function paper() {
  document.getElementById("your-actual-score").textContent = yourNumber;
  document.getElementById("actual-comp-score").textContent = compNumber;
  let total = yourNumber + compNumber;
- percentage2 = Math.round((compNumber / total) * 100);
- percentage1 = Math.round((yourNumber / total) * 100);
+ isNaN(percentage1) ? 50 : percentage1 = Math.round((yourNumber / total) * 100);
+ isNaN(percentage2) ? 50 : percentage2 = Math.round((compNumber / total) * 100);
+ isNaN(percentage1) ? percentage1 = Math.round((yourNumber / total) * 100) : 50;
+ isNaN(percentage2) ? percentage2 = Math.round((compNumberNumber / total) * 100) : 50;
  document.getElementById("percentage1").textContent = percentage1;
  document.getElementById("percentage2").textContent = percentage2;
 
@@ -88,7 +92,7 @@ function scissors() {
  } else {
   computerMove = 'SCISSORS';
  }
- console.log(computerMove);
+ // console.log(computerMove);
 
  let result = '';
  if (computerMove === 'ROCK') {
@@ -105,9 +109,10 @@ function scissors() {
  document.getElementById("your-actual-score").textContent = yourNumber;
  document.getElementById("actual-comp-score").textContent = compNumber;
  let total = yourNumber + compNumber;
- percentage1 = Math.round((yourNumber / total) * 100);
- percentage2 = Math.round((compNumber / total) * 100);
+ isNaN(percentage1) ? 50 : percentage1 = Math.round((yourNumber / total) * 100);
+ isNaN(percentage2) ? 50 : percentage2 = Math.round((compNumber / total) * 100);
+ isNaN(percentage1) ? percentage1 = Math.round((yourNumber / total) * 100) : 50;
+ isNaN(percentage2) ? percentage2 = Math.round((compNumberNumber / total) * 100) : 50;
  document.getElementById("percentage1").textContent = percentage1;
  document.getElementById("percentage2").textContent = percentage2;
 }
-
