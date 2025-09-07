@@ -79,8 +79,7 @@ function paper() {
  document.getElementById("percentage1").textContent = percentage1;
  document.getElementById("percentage2").textContent = percentage2;
 
-}
-
+}
 
 function scissors() {
  let computerMove = '';
